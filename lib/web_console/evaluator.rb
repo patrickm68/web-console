@@ -19,7 +19,14 @@ module WebConsole
     end
 
     def eval(input)
-      "=> #{@binding.eval(input).inspect}\n"
+      # Binding#source_location is available since Ruby 2.6. But if this should
+      # be removed the `WebConsole::SessionTest#test_use_first_binding_if_no_application_bindings`
+      # must be adjusted.
+      if @binding.respond_to? :source_location
+        "=> #{@binding.eval(input, *@binding.source_location).inspect}\n"
+      else
+        "=> #{@binding.eval(input).inspect}\n"
+      end
     rescue Exception => exc
       format_exception(exc)
     end
