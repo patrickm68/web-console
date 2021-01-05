@@ -51,6 +51,9 @@ module WebConsole
           end
         end
 
+        def source_location
+        end
+
         self
       end
 

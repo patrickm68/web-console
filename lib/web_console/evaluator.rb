@@ -19,7 +19,12 @@ module WebConsole
     end
 
     def eval(input)
-      "=> #{@binding.eval(input).inspect}\n"
+      # Binding#source_location is available since Ruby 2.6.
+      if @binding.respond_to? :source_location
+        "=> #{@binding.eval(input, *@binding.source_location).inspect}\n"
+      else
+        "=> #{@binding.eval(input).inspect}\n"
+      end
     rescue Exception => exc
       format_exception(exc)
     end
