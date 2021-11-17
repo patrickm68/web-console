@@ -7,8 +7,8 @@ require "web_console/version"
 Gem::Specification.new do |s|
   s.name     = "web-console"
   s.version  = WebConsole::VERSION
-  s.authors  = ["Charlie Somerville", "Genadi Samokovarov", "Guillermo Iguaran", "Ryan Dao"]
-  s.email    = ["charlie@charliesomerville.com", "gsamokovarov@gmail.com", "guilleiguaran@gmail.com", "daoduyducduong@gmail.com"]
+  s.authors  = ["Hailey Somerville", "Genadi Samokovarov", "Guillermo Iguaran", "Ryan Dao"]
+  s.email    = ["hailey@hailey.lol", "gsamokovarov@gmail.com", "guilleiguaran@gmail.com", "daoduyducduong@gmail.com"]
   s.homepage = "https://github.com/rails/web-console"
   s.summary  = "A debugging tool for your Ruby on Rails applications."
   s.license  = "MIT"
