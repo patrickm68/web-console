@@ -2,6 +2,11 @@
 
 ## master (unreleased)
 
+## 4.2.0
+
+* [#308](https://github.com/rails/web-console/pull/308) Fix web-console inline templates rendering ([@voxik])
+* [#306](https://github.com/rails/web-console/pull/306) Support Ruby 3.0 and above ([@ruanwood])
+
 ## 4.1.0
 
 * [#304](https://github.com/rails/web-console/pull/304) Add support for Rails 6.1 ([@stephannv])
@@ -179,3 +184,5 @@ go to 3.1.0 instead.
 [@celvro]: https://github.com/celvro
 [@JuanitoFatas]: https://github.com/JuanitoFatas
 [@p8]: https://github.com/p8
+[@voxik]: https://github.com/voxik
+[@ryanwood]: https://github.com/ryanwood
